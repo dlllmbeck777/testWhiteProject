@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="" method="post">
+      {% csrf_token %}
+      <div class="formcontainer">
+      <div class="container">
+        <h5>Текст заявления согласия ПКБ</h5>
+        <h6></h6>
+        <label for="phone">{{form.sms_code}}</label>
+      </div>
+      <h6></h6>
+      <div class="container" style="background-color: #eee">
+      </div>
+      <h6></h6>
+      <button type="submit">Ok</button>
+      <button type="submit">Chancel</button>
+    </form>
+  </body>
+</html>

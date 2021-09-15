@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="" method="post">
+      {% csrf_token %}
+      <div class="formcontainer">
+      <div class="container">
+        <h5>IIN</h5>
+        <label for="iin">{{form.iin}}</label>
+        <h5>Phone</h5>
+        <label for="phone">{{form.phone}}</label>
+      </div>
+      <h6></h6>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+          {{ form.is_gathering }}
+          Согласен на сбор и обработку персональных данных          
+        <!-- <input type="checkbox"  checked="checked" name="remember"> Согласен на сбор и обработку персональных данных -->
+        </label>
+      </div>
+      <h6></h6>
+      <button type="submit">Продолжить</button>
+    </form>
+  </body>
+</html>
